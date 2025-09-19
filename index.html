@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipe Meja Pintar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        ul, ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .image-gallery {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prototipe Meja Pintar</h1>
+            <p>Meja Masa Depan dengan Permukaan yang Dapat Berubah</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="fitur">
+            <h2>Fitur Meja</h2>
+            <ul>
+                <li><strong>Notifikasi Haptik:</strong> Meja dapat bergetar atau menaikkan partisi untuk memberi tahu Anda tentang notifikasi penting dari perangkat lain.</li>
+                <li><strong>Penyimpanan Dinamis:</strong> Permukaan meja dapat membentuk cekungan atau wadah untuk menyimpan barang-barang kecil, menjaga kerapian.</li>
+                <li><strong>Design Adjustable:</strong> Permukaan meja dapat berubah bentuk secara real-time, menyesuaikan dengan kebutuhan pengguna.</li>
+                <li><strong>Pengisian Daya Nirkabel:</strong> Meja ini dilengkapi dengan area pengisian daya nirkabel tersembunyi.</li>
+                <li><strong>AI Interaction:</strong> Pengguna dapat berinteraksi dengan meja melalui perintah suara, dan AI akan mengontrol gerakan partisi.</li>
+            </ul>
+        </section>
+
+        <section id="cara-kerja">
+            <h2>Cara Kerja</h2>
+            <p>Meja pintar ini bekerja dengan mengintegrasikan komponen perangkat keras dan lunak yang saling berinteraksi:</p>
+            <ol>
+                <li><strong>Deteksi Interaksi:</strong> Sensor sentuh, tekanan, dan kamera mendeteksi interaksi pengguna, seperti sentuhan atau penempatan objek.</li>
+                <li><strong>Pemrosesan Data:</strong> Data dari sensor dikirim ke mikrokontroler (misalnya, Raspberry Pi) yang berfungsi sebagai otak meja.</li>
+                <li><strong>Pengendalian Gerakan:</strong> Mikrokontroler mengirimkan perintah ke aktuator di bawah setiap partisi, yang kemudian menggerakkan partisi tersebut naik atau turun sesuai dengan kebutuhan.</li>
+                <li><strong>Interaksi AI:</strong> AI memproses perintah suara pengguna atau data visual dari kamera, lalu menginstruksikan mikrokontroler untuk melakukan tindakan spesifik, seperti mengubah bentuk permukaan menjadi stand laptop.</li>
+            </ol>
+        </section>
+        
+        <section id="manfaat">
+            <h2>Manfaat</h2>
+            <ul>
+                <li><strong>Peningkatan Ergonomi:</strong> Dapat membentuk stand laptop untuk postur kerja yang lebih baik, mengurangi ketegangan leher dan bahu.</li>
+                <li><strong>Efisiensi Ruang:</strong> Fitur penyimpanan dinamis membantu menjaga kerapian tanpa perlu wadah tambahan.</li>
+                <li><strong>Interaksi Intuitif:</strong> Memberikan pengalaman interaksi yang dapat disentuh dan dirasakan secara fisik.</li>
+                <li><strong>Pengalaman yang Dipersonalisasi:</strong> AI dapat belajar dari kebiasaan Anda dan mengantisipasi kebutuhan.</li>
+                <li><strong>Peningkatan Produktivitas:</strong> Notifikasi haptik dan pengisian daya nirkabel membantu Anda tetap fokus dan terhubung.</li>
+            </ul>
+        </section>
+
+        <section id="galeri-gambar">
+            <h2>Ilustrasi Prototipe Meja</h2>
+            <div class="image-gallery">
+                <p><strong>Prototipe Meja Dasar:</strong></p>
+                <img src="https://garawins.github.io/Smart-Table-Prototype/images/basic-table.png" alt="Prototipe Meja Dasar">
+                <p><strong>Prototipe dengan Stand Laptop:</strong></p>
+                <img src="https://garawins.github.io/Smart-Table-Prototype/images/laptop-stand.png" alt="Meja dengan Stand Laptop">
+                <p><strong>Prototipe dengan Stand Laptop dan Headphone:</strong></p>
+                <img src="https://garawins.github.io/Smart-Table-Prototype/images/laptop-headphone-stand.png" alt="Meja dengan Stand Laptop dan Headphone">
+                <small>Catatan: Untuk menampilkan gambar, pastikan Anda telah mengunggah file gambar dengan nama yang sesuai (basic-table.png, laptop-stand.png, dll.) ke folder bernama 'images' di dalam repositori Anda.</small>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
